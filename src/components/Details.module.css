@@ -1,0 +1,65 @@
+.container {
+  width: 550px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px) saturate(100%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: #eee;
+  padding: 30px;
+}
+
+.containerInSide {
+  width: 80%;
+  position: relative;
+}
+
+.titleCurrentWeather > h2 {
+  opacity: 0.8;
+}
+
+.titleCurrentWeather > div {
+  margin-top: 10px;
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+  opacity: 0.3;
+}
+
+.currentWeatherContainer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.currentWeatherDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.currentWeatherDetails span:first-child {
+  opacity: 0.6;
+}
+
+.currentWeatherDetails span:last-child {
+  font-weight: bold;
+}
+
+.forecastContainer {
+  margin-top: 30px;
+}
+
+.forecastItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.forecastItems img {
+  position: absolute;
+  width: 100px;
+  left: 45%;
+}
