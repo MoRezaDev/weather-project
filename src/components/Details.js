@@ -25,7 +25,6 @@ const Details = ({ data, forecast }) => {
   const forecastDays = WEEK_DAYS.slice(DayinAWeek, WEEK_DAYS.length).concat(
     WEEK_DAYS.slice(0, DayinAWeek)
   );
-  console.log(forecastDays);
   if (data && forecast) {
     const {
       main: { humidity, pressure },

@@ -64,11 +64,6 @@ function App() {
   const animateValueHandler = () => {
     setAnimateValue(false);
   };
-  console.log(data);
-  console.log(weather);
-  console.log(date);
-  console.log(animateValue);
-  console.log(forecast);
 
   useEffect(() => {
     setAnimateValue(true);
@@ -96,7 +91,9 @@ function App() {
       }
     >
       <Search onSearchChange={onSearchChange} />
-      <h2 className="title-header">please Turn on your P*r*o*x*y if you live in Iran</h2>
+      <h2 className="title-header">
+        please Turn on your P*r*o*x*y if you live in Iran
+      </h2>
       <Details forecast={forecast} data={data} weather={weather} />
       {data && (
         <div className="title-container">
